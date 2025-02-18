@@ -1,158 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CS2 Dashboard</title>
-  <!-- Tailwind CSS via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Configure Tailwind dark mode -->
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS:GO Match Monitor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-white">
-  <div class="container mx-auto p-4">
-    <h1 class="text-3xl font-bold mb-6">CS2 Dashboard</h1>
+<body class="bg-gray-900 text-white p-4">
+    <div id="app" class="container mx-auto">
+        <!-- Map and Round Info -->
+        <div class="bg-gray-800 rounded-lg p-4 mb-4">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h2 class="text-2xl font-bold">
+                        <span class="text-orange-500">{{ map_name }}</span>
+                        <span class="text-sm text-gray-400">({{ mode }})</span>
+                    </h2>
+                    <p class="text-gray-400">Round {{ round }} - {{ phase }} (ends in {{ phase_ends_in }}s)</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold">
+                        <span class="text-blue-500">{{ ct_score }}</span> -
+                        <span class="text-red-500">{{ t_score }}</span>
+                    </div>
+                    <div class="text-sm text-gray-400">Bomb: {{ bomb_state }}</div>
+                </div>
+            </div>
+        </div>
 
-    <!-- Game Info Cards -->
-    <div id="gameInfo" class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-      <!-- Map Info Card -->
-      <div class="bg-gray-800 rounded-lg shadow p-4">
-        <h2 class="text-xl font-semibold mb-2">Map Info</h2>
-        <p><strong>Name:</strong> <span id="mapName">Loading...</span></p>
-        <p><strong>Round Phase:</strong> <span id="roundPhase">Loading...</span></p>
-        <p><strong>Round Number:</strong> <span id="roundNumber">Loading...</span></p>
-      </div>
+        <!-- Teams Columns -->
+        <div class="grid grid-cols-2 gap-4">
+            <!-- CT Team -->
+            <div class="bg-gray-800 rounded-lg p-4">
+                <h3 class="text-blue-500 text-xl font-bold mb-4">Counter-Terrorists</h3>
+                <div id="ct-players" class="space-y-2">
+                    <!-- Player cards will be inserted here -->
+                </div>
+            </div>
 
-      <!-- Team Scores Card -->
-      <div class="bg-gray-800 rounded-lg shadow p-4">
-        <h2 class="text-xl font-semibold mb-2">Team Scores</h2>
-        <p><strong>CT Score:</strong> <span id="teamCTScore">Loading...</span></p>
-        <p><strong>T Score:</strong> <span id="teamTScore">Loading...</span></p>
-      </div>
+            <!-- T Team -->
+            <div class="bg-gray-800 rounded-lg p-4">
+                <h3 class="text-red-500 text-xl font-bold mb-4">Terrorists</h3>
+                <div id="t-players" class="space-y-2">
+                    <!-- Player cards will be inserted here -->
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Players Section -->
-    <div id="playersSection">
-      <h2 class="text-2xl font-semibold mb-4">Players</h2>
-      <!-- Two columns: one for CT and one for T -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <!-- CT Team Column -->
-        <div id="ctContainer" class="space-y-4">
-          <h3 class="text-xl font-bold">CT</h3>
-          <!-- CT player cards will be inserted here -->
-        </div>
-        <!-- T Team Column -->
-        <div id="tContainer" class="space-y-4">
-          <h3 class="text-xl font-bold">T</h3>
-          <!-- T player cards will be inserted here -->
-        </div>
-      </div>
-    </div>
-  </div>
+    <script>
+        async function fetchGameData() {
+            try {
+                const response = await fetch('http://127.0.0.1:3000/data');
+                if (!response.ok) throw new Error('Failed to fetch data');
 
-  <script>
-    // Function to create a player card element
-    function createPlayerCard(playerId, playerData) {
-      const card = document.createElement('div');
-      card.className = 'bg-gray-800 rounded-lg shadow p-4';
-
-      // Header: Player Name & Team
-      const header = document.createElement('div');
-      header.className = 'mb-2';
-      header.innerHTML = `
-        <h3 class="text-xl font-bold">${playerData.name || 'Unknown'}</h3>
-        <p class="text-sm text-gray-400">Team: ${playerData.team || 'N/A'}</p>
-      `;
-      card.appendChild(header);
-
-      // Match Stats
-      const matchStats = playerData.match_stats || {};
-      const statsDiv = document.createElement('div');
-      statsDiv.className = 'mb-2';
-      statsDiv.innerHTML = `
-        <p><strong>Kills:</strong> ${matchStats.kills ?? 'N/A'}</p>
-        <p><strong>Deaths:</strong> ${matchStats.deaths ?? 'N/A'}</p>
-        <p><strong>Assists:</strong> ${matchStats.assists ?? 'N/A'}</p>
-        <p><strong>MVPs:</strong> ${matchStats.mvps ?? 'N/A'}</p>
-        <p><strong>Score:</strong> ${matchStats.score ?? 'N/A'}</p>
-      `;
-      card.appendChild(statsDiv);
-
-      // Player State: Health, Armor, Money, etc.
-      const state = playerData.state || {};
-      const stateDiv = document.createElement('div');
-      stateDiv.className = 'mb-2';
-      stateDiv.innerHTML = `
-        <p><strong>Health:</strong> ${state.health ?? 'N/A'}</p>
-        <p><strong>Armor:</strong> ${state.armor ?? 'N/A'}</p>
-        <p><strong>Money:</strong> ${state.money ?? 'N/A'}</p>
-      `;
-      card.appendChild(stateDiv);
-
-      // Weapons List
-      const weapons = playerData.weapons || {};
-      const weaponNames = Object.values(weapons)
-        .map(weapon => weapon.name)
-        .filter(name => name) // Filter out empty or undefined names
-        .join(', ') || 'None';
-      const weaponsDiv = document.createElement('div');
-      weaponsDiv.innerHTML = `<p><strong>Weapons:</strong> ${weaponNames}</p>`;
-      card.appendChild(weaponsDiv);
-
-      return card;
-    }
-
-    // Function to fetch and update the dashboard data
-    function updateData() {
-      fetch('/data')
-        .then(response => response.json())
-        .then(data => {
-          // Update Map Info & Team Scores
-          if (data.map) {
-            document.getElementById('mapName').innerText = data.map.name || 'N/A';
-            document.getElementById('roundNumber').innerText = data.map.round || 'N/A';
-            if (data.round) {
-              document.getElementById('roundPhase').innerText = data.round.phase || 'N/A';
+                const newData = await response.json();
+                updateGameData(newData);
+            } catch (error) {
+                console.error('Error fetching game data:', error);
             }
-            if (data.map.team_ct) {
-              document.getElementById('teamCTScore').innerText = data.map.team_ct.score || 'N/A';
-            }
-            if (data.map.team_t) {
-              document.getElementById('teamTScore').innerText = data.map.team_t.score || 'N/A';
-            }
-          }
+        }
 
-          // Clear previous player cards and re-add headers
-          const ctContainer = document.getElementById('ctContainer');
-          const tContainer = document.getElementById('tContainer');
-          ctContainer.innerHTML = '<h3 class="text-xl font-bold">CT</h3>';
-          tContainer.innerHTML = '<h3 class="text-xl font-bold">T</h3>';
+        function updateGameData(newData) {
+            gameData = newData;
+            render();
+        }
 
-          // Separate players by team and create cards for each
-          if (data.allplayers) {
-            Object.entries(data.allplayers).forEach(([playerId, playerData]) => {
-              const card = createPlayerCard(playerId, playerData);
-              if (playerData.team === 'CT') {
-                ctContainer.appendChild(card);
-              } else if (playerData.team === 'T') {
-                tContainer.appendChild(card);
-              }
-            });
-          }
-        })
-        .catch(error => {
-          console.error('Error fetching data:', error);
-        });
-    }
+        function render() {
+            // Update map info
+            document.querySelector('#app').innerHTML = `
+                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h2 class="text-2xl font-bold">
+                                <span class="text-orange-500">${gameData.map?.name || ''}</span>
+                                <span class="text-sm text-gray-400">(${gameData.map?.mode || ''})</span>
+                            </h2>
+                            <p class="text-gray-400">Round ${gameData.map?.round || ''} - ${gameData.phase_countdowns?.phase || ''} (ends in ${parseFloat(gameData.phase_countdowns?.phase_ends_in || 0).toFixed(1)}s)</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold">
+                                <span class="text-blue-500">${gameData.map?.team_ct?.score || 0}</span> -
+                                <span class="text-red-500">${gameData.map?.team_t?.score || 0}</span>
+                            </div>
+                            <div class="text-sm text-gray-400">Bomb: ${gameData.bomb?.state || ''}</div>
+                        </div>
+                    </div>
+                </div>
 
-    // Poll for new data every second
-    setInterval(updateData, 1000);
-    // Initial fetch when the page loads
-    updateData();
-  </script>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-gray-800 rounded-lg p-4">
+                        <h3 class="text-blue-500 text-xl font-bold mb-4">Counter-Terrorists</h3>
+                        <div id="ct-players" class="space-y-2">${renderTeam('CT')}</div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-4">
+                        <h3 class="text-red-500 text-xl font-bold mb-4">Terrorists</h3>
+                        <div id="t-players" class="space-y-2">${renderTeam('T')}</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderTeam(team) {
+            return Object.values(gameData.allplayers || {})
+                .filter(player => player.team === team)
+                .map(createPlayerCard)
+                .join('');
+        }
+
+        function createPlayerCard(player) {
+            const activeWeapon = Object.values(player.weapons || {}).find(w => w.state === 'active') || {};
+
+            return `
+                <div class="bg-gray-700 rounded p-3">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="font-bold">${player.name}</span>
+                        <div class="flex items-center gap-2">
+                            <span class="text-yellow-500">$${player.state?.money}</span>
+                            <span class="text-sm ${player.state?.health <= 20 ? 'text-red-400' : 'text-green-400'}">
+                                ${player.state?.health}HP
+                            </span>
+                            <span class="text-sm text-blue-400">
+                                ${player.state?.armor}ARM
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-2 text-sm">
+                        <div>
+                            <div class="text-gray-400">K/D/A</div>
+                            <div>${player.match_stats?.kills}/${player.match_stats?.deaths}/${player.match_stats?.assists}</div>
+                        </div>
+                        <div>
+                            <div class="text-gray-400">Weapon</div>
+                            <div>${activeWeapon.name || 'None'}</div>
+                        </div>
+                        <div>
+                            <div class="text-gray-400">Equipment</div>
+                            <div>${player.state?.defusekit ? 'Defuse Kit' : ''}</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        let gameData = {};
+
+        setInterval(fetchGameData, 100);
+
+        // Initial fetch
+        fetchGameData();
+    </script>
 </body>
 </html>

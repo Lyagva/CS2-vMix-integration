@@ -1,0 +1,704 @@
+{
+  "provider": {
+    "name": "Counter-Strike: Global Offensive",
+    "appid": 730,
+    "version": 14068,
+    "steamid": "76561198349470608",
+    "timestamp": 1739792319
+  },
+  "phase_countdowns": {
+    "phase": "freezetime",
+    "phase_ends_in": "3.9"
+  },
+  "map": {
+    "round_wins": {
+      "1": "ct_win_defuse",
+      "2": "t_win_elimination",
+      "3": "ct_win_elimination",
+      "4": "ct_win_time",
+      "5": "t_win_elimination",
+      "6": "ct_win_elimination",
+      "7": "t_win_bomb",
+      "8": "ct_win_elimination",
+      "9": "t_win_bomb",
+      "10": "ct_win_time",
+      "11": "t_win_bomb"
+    },
+    "mode": "casual",
+    "name": "de_inferno",
+    "phase": "live",
+    "round": 11,
+    "team_ct": {
+      "score": 6,
+      "consecutive_round_losses": 1,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "team_t": {
+      "score": 5,
+      "consecutive_round_losses": 0,
+      "timeouts_remaining": 1,
+      "matches_won_this_series": 0
+    },
+    "num_matches_to_win_series": 0
+  },
+  "round": {
+    "phase": "freezetime"
+  },
+  "bomb": {
+    "state": "carried",
+    "position": "-1662.18, 288.76, -63.97",
+    "player": "921"
+  },
+  "player": {
+    "match_stats": {
+      "kills": 10,
+      "assists": 4,
+      "deaths": 7,
+      "mvps": 1,
+      "score": 34
+    },
+    "spectarget": "909",
+    "position": "2472.35, 2005.97, 134.51",
+    "forward": "-0.93, 0.37, -0.00",
+    "weapons": {
+      "weapon_0": {
+        "name": "weapon_knife",
+        "paintkit": "default",
+        "type": "Knife",
+        "state": "holstered"
+      },
+      "weapon_1": {
+        "name": "weapon_mp9",
+        "paintkit": "default",
+        "type": "Submachine Gun",
+        "ammo_clip": 30,
+        "ammo_clip_max": 30,
+        "ammo_reserve": 120,
+        "state": "active"
+      },
+      "weapon_2": {
+        "name": "weapon_p250",
+        "paintkit": "default",
+        "type": "Pistol",
+        "ammo_clip": 13,
+        "ammo_clip_max": 13,
+        "ammo_reserve": 26,
+        "state": "holstered"
+      }
+    },
+    "state": {
+      "health": 100,
+      "armor": 100,
+      "helmet": true,
+      "defusekit": true,
+      "flashed": 0,
+      "smoked": 0,
+      "burning": 0,
+      "money": 6950,
+      "round_kills": 0,
+      "round_killhs": 0,
+      "round_totaldmg": 0,
+      "equip_value": 2950
+    },
+    "steamid": "909",
+    "name": "\u0410\u0434\u043e\u043d\u0438\u0441",
+    "observer_slot": 0,
+    "team": "CT",
+    "activity": "playing"
+  },
+  "allplayers": {
+    "909": {
+      "name": "\u0410\u0434\u043e\u043d\u0438\u0441",
+      "observer_slot": 0,
+      "team": "CT",
+      "match_stats": {
+        "kills": 10,
+        "assists": 4,
+        "deaths": 7,
+        "mvps": 1,
+        "score": 34
+      },
+      "position": "2472.35, 2005.97, 134.51",
+      "forward": "-0.93, 0.37, -0.00",
+      "state": {
+        "health": 100,
+        "armor": 100,
+        "helmet": true,
+        "defusekit": true,
+        "flashed": 0,
+        "smoked": 0,
+        "burning": 0,
+        "money": 6950,
+        "round_kills": 0,
+        "round_killhs": 0,
+        "round_totaldmg": 0,
+        "equip_value": 2950
+      },
+      "weapons": {
+        "weapon_0": {
+          "name": "weapon_knife",
+          "paintkit": "default",
+          "type": "Knife",
+          "state": "holstered"
+        },
+        "weapon_1": {
+          "name": "weapon_mp9",
+          "paintkit": "default",
+          "type": "Submachine Gun",
+          "ammo_clip": 30,
+          "ammo_clip_max": 30,
+          "ammo_reserve": 120,
+          "state": "active"
+        },
+        "weapon_2": {
+          "name": "weapon_p250",
+          "paintkit": "default",
+          "type": "Pistol",
+          "ammo_clip": 13,
+          "ammo_clip_max": 13,
+          "ammo_reserve": 26,
+          "state": "holstered"
+        }
+      }
+    },
+    "915": {
+      "name": "\u041e\u043b\u0438",
+      "observer_slot": 1,
+      "team": "CT",
+      "match_stats": {
+        "kills": 6,
+        "assists": 3,
+        "deaths": 6,
+        "mvps": 2,
+        "score": 22
+      },
+      "position": "2292.06, 2027.69, 135.96",
+      "forward": "0.37, 0.93, -0.00",
+      "state": {
+        "health": 100,
+        "armor": 100,
+        "helmet": true,
+        "defusekit": true,
+        "flashed": 0,
+        "smoked": 0,
+        "burning": 0,
+        "money": 3750,
+        "round_kills": 0,
+        "round_killhs": 0,
+        "round_totaldmg": 0,
+        "equip_value": 4050
+      },
+      "weapons": {
+        "weapon_0": {
+          "name": "weapon_knife",
+          "paintkit": "default",
+          "type": "Knife",
+          "state": "holstered"
+        },
+        "weapon_1": {
+          "name": "weapon_p90",
+          "paintkit": "default",
+          "type": "Submachine Gun",
+          "ammo_clip": 50,
+          "ammo_clip_max": 50,
+          "ammo_reserve": 100,
+          "state": "active"
+        },
+        "weapon_2": {
+          "name": "weapon_p250",
+          "paintkit": "default",
+          "type": "Pistol",
+          "ammo_clip": 13,
+          "ammo_clip_max": 13,
+          "ammo_reserve": 26,
+          "state": "holstered"
+        }
+      }
+    },
+    "921": {
+      "name": "\u0414\u0438\u043e\u0441",
+      "observer_slot": 5,
+      "team": "T",
+      "match_stats": {
+        "kills": 6,
+        "assists": 1,
+        "deaths": 9,
+        "mvps": 1,
+        "score": 28
+      },
+      "position": "-1662.18, 288.76, -63.97",
+      "forward": "0.24, 0.97, -0.00",
+      "state": {
+        "health": 100,
+        "armor": 100,
+        "helmet": true,
+        "flashed": 0,
+        "smoked": 0,
+        "burning": 0,
+        "money": 5350,
+        "round_kills": 0,
+        "round_killhs": 0,
+        "round_totaldmg": 0,
+        "equip_value": 3700
+      },
+      "weapons": {
+        "weapon_0": {
+          "name": "weapon_knife_t",
+          "paintkit": "default",
+          "type": "Knife",
+          "state": "holstered"
+        },
+        "weapon_1": {
+          "name": "weapon_c4",
+          "paintkit": "default",
+          "type": "C4",
+          "state": "holstered"
+        },
+        "weapon_2": {
+          "name": "weapon_xm1014",
+          "paintkit": "default",
+          "type": "Shotgun",
+          "ammo_clip": 7,
+          "ammo_clip_max": 7,
+          "ammo_reserve": 32,
+          "state": "active"
+        },
+        "weapon_3": {
+          "name": "weapon_deagle",
+          "paintkit": "default",
+          "type": "Pistol",
+          "ammo_clip": 7,
+          "ammo_clip_max": 7,
+          "ammo_reserve": 35,
+          "state": "holstered"
+        }
+      }
+    },
+    "927": {
+      "name": "\u041c\u0430\u0440\u0443",
+      "observer_slot": 2,
+      "team": "CT",
+      "match_stats": {
+        "kills": 9,
+        "assists": 5,
+        "deaths": 4,
+        "mvps": 0,
+        "score": 31
+      },
+      "position": "2353.00, 1977.00, 135.52",
+      "forward": "-0.10, 0.99, -0.00",
+      "state": {
+        "health": 100,
+        "armor": 100,
+        "helmet": true,
+        "defusekit": true,
+        "flashed": 0,
+        "smoked": 0,
+        "burning": 0,
+        "money": 8650,
+        "round_kills": 0,
+        "round_killhs": 0,
+        "round_totaldmg": 0,
+        "equip_value": 2750
+      },
+      "weapons": {
+        "weapon_0": {
+          "name": "weapon_knife",
+          "paintkit": "default",
+          "type": "Knife",
+          "state": "holstered"
+        },
+        "weapon_1": {
+          "name": "weapon_nova",
+          "paintkit": "default",
+          "type": "Shotgun",
+          "ammo_clip": 8,
+          "ammo_clip_max": 8,
+          "ammo_reserve": 32,
+          "state": "active"
+        },
+        "weapon_2": {
+          "name": "weapon_p250",
+          "paintkit": "default",
+          "type": "Pistol",
+          "ammo_clip": 13,
+          "ammo_clip_max": 13,
+          "ammo_reserve": 26,
+          "state": "holstered"
+        }
+      }
+    },
+    "933": {
+      "name": "\u0411\u044d\u0441\u0441\u0438",
+      "observer_slot": 6,
+      "team": "T",
+      "match_stats": {
+        "kills": 8,
+        "assists": 2,
+        "deaths": 8,
+        "mvps": 1,
+        "score": 27
+      },
+      "position": "-1657.23, 419.58, -63.97",
+      "forward": "1.00, -0.05, -0.00",
+      "state": {
+        "health": 100,
+        "armor": 100,
+        "helmet": true,
+        "flashed": 0,
+        "smoked": 0,
+        "burning": 0,
+        "money": 4750,
+        "round_kills": 0,
+        "round_killhs": 0,
+        "round_totaldmg": 0,
+        "equip_value": 4300
+      },
+      "weapons": {
+        "weapon_0": {
+          "name": "weapon_knife_t",
+          "paintkit": "default",
+          "type": "Knife",
+          "state": "holstered"
+        },
+        "weapon_1": {
+          "name": "weapon_ak47",
+          "paintkit": "default",
+          "type": "Rifle",
+          "ammo_clip": 30,
+          "ammo_clip_max": 30,
+          "ammo_reserve": 90,
+          "state": "active"
+        },
+        "weapon_2": {
+          "name": "weapon_p250",
+          "paintkit": "default",
+          "type": "Pistol",
+          "ammo_clip": 13,
+          "ammo_clip_max": 13,
+          "ammo_reserve": 26,
+          "state": "holstered"
+        },
+        "weapon_3": {
+          "name": "weapon_hegrenade",
+          "paintkit": "default",
+          "type": "Grenade",
+          "ammo_reserve": 1,
+          "state": "holstered"
+        }
+      }
+    },
+    "939": {
+      "name": "\u0428\u0438\u0448\u043a\u0438\u043d",
+      "observer_slot": 7,
+      "team": "T",
+      "match_stats": {
+        "kills": 5,
+        "assists": 0,
+        "deaths": 8,
+        "mvps": 0,
+        "score": 16
+      },
+      "position": "-1586.52, 440.79, -63.97",
+      "forward": "0.92, -0.39, 0.00",
+      "state": {
+        "health": 100,
+        "armor": 100,
+        "helmet": true,
+        "flashed": 0,
+        "smoked": 0,
+        "burning": 0,
+        "money": 4250,
+        "round_kills": 0,
+        "round_killhs": 0,
+        "round_totaldmg": 0,
+        "equip_value": 3000
+      },
+      "weapons": {
+        "weapon_0": {
+          "name": "weapon_knife_t",
+          "paintkit": "default",
+          "type": "Knife",
+          "state": "holstered"
+        },
+        "weapon_1": {
+          "name": "weapon_ssg08",
+          "paintkit": "default",
+          "type": "SniperRifle",
+          "ammo_clip": 10,
+          "ammo_clip_max": 10,
+          "ammo_reserve": 90,
+          "state": "active"
+        },
+        "weapon_2": {
+          "name": "weapon_p250",
+          "paintkit": "default",
+          "type": "Pistol",
+          "ammo_clip": 13,
+          "ammo_clip_max": 13,
+          "ammo_reserve": 26,
+          "state": "holstered"
+        }
+      }
+    },
+    "945": {
+      "name": "\u041c\u0438\u0433\u0435\u043b\u044c",
+      "observer_slot": 3,
+      "team": "CT",
+      "match_stats": {
+        "kills": 13,
+        "assists": 3,
+        "deaths": 5,
+        "mvps": 3,
+        "score": 37
+      },
+      "position": "2456.83, 2153.16, 132.08",
+      "forward": "-0.34, -0.94, -0.00",
+      "state": {
+        "health": 100,
+        "armor": 100,
+        "helmet": true,
+        "defusekit": true,
+        "flashed": 0,
+        "smoked": 0,
+        "burning": 0,
+        "money": 8250,
+        "round_kills": 0,
+        "round_killhs": 0,
+        "round_totaldmg": 0,
+        "equip_value": 3150
+      },
+      "weapons": {
+        "weapon_0": {
+          "name": "weapon_knife",
+          "paintkit": "default",
+          "type": "Knife",
+          "state": "holstered"
+        },
+        "weapon_1": {
+          "name": "weapon_nova",
+          "paintkit": "default",
+          "type": "Shotgun",
+          "ammo_clip": 8,
+          "ammo_clip_max": 8,
+          "ammo_reserve": 32,
+          "state": "active"
+        },
+        "weapon_2": {
+          "name": "weapon_deagle",
+          "paintkit": "default",
+          "type": "Pistol",
+          "ammo_clip": 7,
+          "ammo_clip_max": 7,
+          "ammo_reserve": 35,
+          "state": "holstered"
+        }
+      }
+    },
+    "951": {
+      "name": "\u0414\u0430\u0439\u043e",
+      "observer_slot": 4,
+      "team": "CT",
+      "match_stats": {
+        "kills": 5,
+        "assists": 5,
+        "deaths": 8,
+        "mvps": 0,
+        "score": 23
+      },
+      "position": "2397.00, 2079.00, 132.77",
+      "forward": "-0.69, 0.73, -0.00",
+      "state": {
+        "health": 100,
+        "armor": 100,
+        "helmet": true,
+        "defusekit": true,
+        "flashed": 0,
+        "smoked": 0,
+        "burning": 0,
+        "money": 5850,
+        "round_kills": 0,
+        "round_killhs": 0,
+        "round_totaldmg": 0,
+        "equip_value": 4100
+      },
+      "weapons": {
+        "weapon_0": {
+          "name": "weapon_knife",
+          "paintkit": "default",
+          "type": "Knife",
+          "state": "holstered"
+        },
+        "weapon_1": {
+          "name": "weapon_xm1014",
+          "paintkit": "default",
+          "type": "Shotgun",
+          "ammo_clip": 7,
+          "ammo_clip_max": 7,
+          "ammo_reserve": 32,
+          "state": "active"
+        },
+        "weapon_2": {
+          "name": "weapon_deagle",
+          "paintkit": "default",
+          "type": "Pistol",
+          "ammo_clip": 7,
+          "ammo_clip_max": 7,
+          "ammo_reserve": 35,
+          "state": "holstered"
+        }
+      }
+    },
+    "957": {
+      "name": "\u0423\u0440\u0438",
+      "observer_slot": 8,
+      "team": "T",
+      "match_stats": {
+        "kills": 4,
+        "assists": 1,
+        "deaths": 10,
+        "mvps": 1,
+        "score": 18
+      },
+      "position": "-1675.62, 351.70, -63.97",
+      "forward": "0.69, 0.73, -0.00",
+      "state": {
+        "health": 100,
+        "armor": 100,
+        "helmet": true,
+        "flashed": 0,
+        "smoked": 0,
+        "burning": 0,
+        "money": 3500,
+        "round_kills": 0,
+        "round_killhs": 0,
+        "round_totaldmg": 0,
+        "equip_value": 2750
+      },
+      "weapons": {
+        "weapon_0": {
+          "name": "weapon_knife_t",
+          "paintkit": "default",
+          "type": "Knife",
+          "state": "holstered"
+        },
+        "weapon_1": {
+          "name": "weapon_mac10",
+          "paintkit": "default",
+          "type": "Submachine Gun",
+          "ammo_clip": 30,
+          "ammo_clip_max": 30,
+          "ammo_reserve": 100,
+          "state": "active"
+        },
+        "weapon_2": {
+          "name": "weapon_deagle",
+          "paintkit": "default",
+          "type": "Pistol",
+          "ammo_clip": 7,
+          "ammo_clip_max": 7,
+          "ammo_reserve": 35,
+          "state": "holstered"
+        }
+      }
+    },
+    "800": {
+      "name": "\u0423\u043b\u0438\u0441\u0441",
+      "observer_slot": 9,
+      "team": "T",
+      "match_stats": {
+        "kills": 7,
+        "assists": 1,
+        "deaths": 8,
+        "mvps": 2,
+        "score": 29
+      },
+      "position": "-1520.06, 430.89, -63.97",
+      "forward": "-0.08, -1.00, -0.00",
+      "state": {
+        "health": 100,
+        "armor": 100,
+        "helmet": true,
+        "flashed": 0,
+        "smoked": 0,
+        "burning": 0,
+        "money": 7300,
+        "round_kills": 0,
+        "round_killhs": 0,
+        "round_totaldmg": 0,
+        "equip_value": 2300
+      },
+      "weapons": {
+        "weapon_0": {
+          "name": "weapon_knife_t",
+          "paintkit": "default",
+          "type": "Knife",
+          "state": "holstered"
+        },
+        "weapon_1": {
+          "name": "weapon_glock",
+          "paintkit": "default",
+          "type": "Pistol",
+          "ammo_clip": 20,
+          "ammo_clip_max": 20,
+          "ammo_reserve": 120,
+          "state": "holstered"
+        },
+        "weapon_2": {
+          "name": "weapon_nova",
+          "paintkit": "default",
+          "type": "Shotgun",
+          "ammo_clip": 8,
+          "ammo_clip_max": 8,
+          "ammo_reserve": 32,
+          "state": "active"
+        },
+        "weapon_3": {
+          "name": "weapon_decoy",
+          "paintkit": "default",
+          "type": "Grenade",
+          "ammo_reserve": 1,
+          "state": "holstered"
+        }
+      }
+    }
+  },
+  "previously": {
+    "phase_countdowns": {
+      "phase_ends_in": "4.1"
+    },
+    "player": {
+      "forward": "-0.93, 0.37, 0.00"
+    },
+    "allplayers": {
+      "909": {
+        "forward": "-0.93, 0.37, 0.00"
+      },
+      "915": {
+        "forward": "0.37, 0.93, 0.00"
+      },
+      "921": {
+        "forward": "0.24, 0.97, 0.00"
+      },
+      "927": {
+        "forward": "-0.10, 0.99, 0.00"
+      },
+      "933": {
+        "forward": "1.00, -0.05, 0.00"
+      },
+      "945": {
+        "forward": "-0.34, -0.94, 0.00"
+      },
+      "951": {
+        "forward": "-0.69, 0.73, 0.00"
+      },
+      "957": {
+        "forward": "0.69, 0.72, 0.00"
+      },
+      "800": {
+        "forward": "-0.08, -1.00, 0.00"
+      }
+    }
+  }
+}
