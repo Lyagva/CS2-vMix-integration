@@ -145,8 +145,8 @@
         }
 
         let gameData = {};
-
-        setInterval(fetchGameData, 100);
+        console.log( {{ update_period }} );
+        setInterval(fetchGameData, {{ update_period }} );
 
         // Initial fetch
         fetchGameData();
