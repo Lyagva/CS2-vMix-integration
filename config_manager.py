@@ -24,9 +24,9 @@ class Config:
         for line in lines:
             # Strip leading/trailing whitespace and ignore empty lines or lines starting with ';'
             stripped_line = line.strip()
-            if stripped_line and not stripped_line.startswith(';'):
+            if stripped_line and not stripped_line.startswith(';;'):
                 # Remove inline comments (anything after ';')
-                comment_index = stripped_line.find(';')
+                comment_index = stripped_line.find(';;')
                 if comment_index != -1:
                     stripped_line = stripped_line[:comment_index].strip()
                 processed_lines.append(stripped_line)
