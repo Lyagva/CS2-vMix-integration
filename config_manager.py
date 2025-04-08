@@ -64,7 +64,8 @@ class Config:
             with open(self.config_path, 'w') as configfile:
                 self.config.write(configfile)
 
-    def _parse_key(self, key):
+    @staticmethod
+    def _parse_key(key):
         parts = key.split('.', 1)
         if len(parts) != 2:
             raise ValueError("Key must be in the format '<category>.<key>'.")
