@@ -1,6 +1,7 @@
 import openpyxl
 from config_manager import config
 from logging_handler import export_logger
+from pathlib import Path
 
 
 def write_excel(data):
@@ -14,6 +15,7 @@ def write_excel(data):
         ws.append(list(data.values()))
         export_logger.debug("Written Excel Workbook")
 
+        Path(config.get("EXCEL.file_path")).parents[0].mkdir(parents=True, exist_ok=True)
         save_path = config.get("EXCEL.file_path")
         wb.save(save_path)
         export_logger.info(f"Saved Excel Workbook to {save_path}")

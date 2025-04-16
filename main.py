@@ -28,25 +28,38 @@ werkzeug_logger.addHandler(file_handler)
 
 latest_data = {}
 
-@app.route('/', methods=['POST'])
+@app.route('/', methods=['POST', 'GET'])
 def handle_data():
     global latest_data
-    latest_data = request.json
-    werkzeug_logger.info("Received new data payload")
+    try:
+        latest_data = request.json
+        werkzeug_logger.info("Received new data payload")
+    except Exception as e:
+        werkzeug_logger.error(e)
 
+    debug_file = config.get("DEBUG.save_file")
     if config.get("DEBUG.debug_mode"):
-        debug_file = config.get("DEBUG.save_file")
+        with open(debug_file, mode="r", encoding="UTF-8") as f:
+            latest_data = json.loads(f.read())
+            # latest_data = json.load(f)
+        export_logger.debug(f"Load data from debug file: {debug_file}")
+
+    if config.get("DEBUG.debug_save"):
         with open(debug_file, mode="w+", encoding="UTF-8") as f:
             json.dump(latest_data, f)
         export_logger.debug(f"Saved data to debug file: {debug_file}")
 
-    data = preparation.flatten_dict(preparation.prepare_data(latest_data))
+    prepared_data = preparation.prepare_data(latest_data)
+    data = preparation.flatten_dict(prepared_data)
     preparation_logger.debug(f"Prepared data: {data}")
     if config.get("CSV.export"):
         export_csv.write_csv(data)
         export_logger.info("Exported data to CSV")
     if config.get("JSON.export"):
-        export_json.write_json(data)
+        if config.get("JSON.raw"):
+            export_json.write_json(prepared_data)
+        else:
+            export_json.write_json(data)
         export_logger.info("Exported data to JSON")
     if config.get("EXCEL.export"):
         export_excel.write_excel(data)

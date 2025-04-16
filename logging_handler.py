@@ -1,6 +1,7 @@
 import logging
 from logging.handlers import RotatingFileHandler
 from config_manager import config
+from pathlib import Path
 
 
 LOGGING_LEVELS = {
@@ -13,6 +14,7 @@ TERMINAL_LOG_LEVEL = LOGGING_LEVELS[config.get("LOG.terminal_logging_level")]
 FILE_LOG_LEVEL = LOGGING_LEVELS[config.get("LOG.file_logging_level")]
 
 # File handler - logs everything
+Path(config.get("LOG.file_path")).parents[0].mkdir(parents=True, exist_ok=True)
 file_handler = RotatingFileHandler(
     config.get("LOG.file_path"),
     encoding="utf-8",

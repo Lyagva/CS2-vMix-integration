@@ -1,0 +1,776 @@
+{
+    "phase_countdowns": {
+        "phase": "freezetime",
+        "phase_ends_in": "3.7"
+    },
+    "map": {
+        "mode": "casual",
+        "phase": "live",
+        "round": 12,
+        "name": "cs_office",
+        "team_ct": {
+            "score": 5,
+            "consecutive_round_losses": 2,
+            "timeouts_remaining": 1,
+            "matches_won_this_series": 0
+        },
+        "team_t": {
+            "score": 7,
+            "consecutive_round_losses": 2,
+            "timeouts_remaining": 1,
+            "matches_won_this_series": 0
+        },
+        "round_wins": {
+            "1": "ct_win_rescue",
+
+            "12": "ct_win_rescue"
+        }
+    },
+    "round": {
+        "phase": "freezetime"
+    },
+    "allplayers": {
+        "team_t": {
+            "0": {
+                "id": "564",
+                "name": "Азул",
+                "observer_slot": 6,
+                "team": "T",
+                "position": {
+                    "x": "1507.00",
+                    "y": "662.00",
+                    "z": "-159.97"
+                },
+                "forward": {
+                    "x": "0.08",
+                    "y": "-1.00",
+                    "z": "0.02"
+                },
+                "match_stats": {
+                    "kills": 6,
+                    "assists": 3,
+                    "deaths": 8,
+                    "mvps": 0,
+                    "score": 24
+                },
+                "state": {
+                    "health": 100,
+                    "armor": 100,
+                    "helmet": true,
+                    "flashed": 0,
+                    "smoked": 0,
+                    "burning": 0,
+                    "money": 5800,
+                    "round_kills": 0,
+                    "round_killhs": 0,
+                    "round_totaldmg": 0,
+                    "equip_value": 3700
+                },
+                "weapons": {
+                    "weapon_0": {
+                        "name": "weapon_knife_t",
+                        "paintkit": "default",
+                        "type": "Knife",
+                        "state": "holstered"
+                    },
+                    "weapon_1": {
+                        "name": "weapon_xm1014",
+                        "paintkit": "default",
+                        "type": "Shotgun",
+                        "ammo_clip": 7,
+                        "ammo_clip_max": 7,
+                        "ammo_reserve": 32,
+                        "state": "active"
+                    },
+                    "weapon_2": {
+                        "name": "weapon_deagle",
+                        "paintkit": "default",
+                        "type": "Pistol",
+                        "ammo_clip": 7,
+                        "ammo_clip_max": 7,
+                        "ammo_reserve": 35,
+                        "state": "holstered"
+                    },
+                    "active": {
+                        "name": "weapon_xm1014",
+                        "paintkit": "default",
+                        "type": "Shotgun",
+                        "ammo_clip": 7,
+                        "ammo_clip_max": 7,
+                        "ammo_reserve": 32,
+                        "state": "active"
+                    }
+                }
+            },
+            "1": {
+                "id": "576",
+                "name": "Панама",
+                "observer_slot": 7,
+                "team": "T",
+                "position": {
+                    "x": "1453.00",
+                    "y": "697.00",
+                    "z": "-159.97"
+                },
+                "forward": {
+                    "x": "0.56",
+                    "y": "-0.83",
+                    "z": "0.02"
+                },
+                "match_stats": {
+                    "kills": 8,
+                    "assists": 2,
+                    "deaths": 9,
+                    "mvps": 2,
+                    "score": 28
+                },
+                "state": {
+                    "health": 100,
+                    "armor": 100,
+                    "helmet": true,
+                    "flashed": 0,
+                    "smoked": 0,
+                    "burning": 0,
+                    "money": 8100,
+                    "round_kills": 0,
+                    "round_killhs": 0,
+                    "round_totaldmg": 0,
+                    "equip_value": 2750
+                },
+                "weapons": {
+                    "weapon_0": {
+                        "name": "weapon_knife_t",
+                        "paintkit": "default",
+                        "type": "Knife",
+                        "state": "holstered"
+                    },
+                    "weapon_1": {
+                        "name": "weapon_mac10",
+                        "paintkit": "default",
+                        "type": "Submachine Gun",
+                        "ammo_clip": 30,
+                        "ammo_clip_max": 30,
+                        "ammo_reserve": 100,
+                        "state": "active"
+                    },
+                    "weapon_2": {
+                        "name": "weapon_p250",
+                        "paintkit": "default",
+                        "type": "Pistol",
+                        "ammo_clip": 13,
+                        "ammo_clip_max": 13,
+                        "ammo_reserve": 26,
+                        "state": "holstered"
+                    },
+                    "weapon_3": {
+                        "name": "weapon_molotov",
+                        "paintkit": "default",
+                        "type": "Grenade",
+                        "ammo_reserve": 1,
+                        "state": "holstered"
+                    },
+                    "active": {
+                        "name": "weapon_mac10",
+                        "paintkit": "default",
+                        "type": "Submachine Gun",
+                        "ammo_clip": 30,
+                        "ammo_clip_max": 30,
+                        "ammo_reserve": 100,
+                        "state": "active"
+                    }
+                }
+            },
+            "2": {
+                "id": "600",
+                "name": "Ferris",
+                "observer_slot": 9,
+                "team": "T",
+                "position": {
+                    "x": "1542.00",
+                    "y": "601.00",
+                    "z": "-159.97"
+                },
+                "forward": {
+                    "x": "-0.70",
+                    "y": "-0.71",
+                    "z": "0.02"
+                },
+                "match_stats": {
+                    "kills": 9,
+                    "assists": 3,
+                    "deaths": 7,
+                    "mvps": 1,
+                    "score": 29
+                },
+                "state": {
+                    "health": 100,
+                    "armor": 100,
+                    "helmet": true,
+                    "flashed": 0,
+                    "smoked": 0,
+                    "burning": 0,
+                    "money": 9450,
+                    "round_kills": 0,
+                    "round_killhs": 0,
+                    "round_totaldmg": 0,
+                    "equip_value": 4200
+                },
+                "weapons": {
+                    "weapon_0": {
+                        "name": "weapon_knife_t",
+                        "paintkit": "default",
+                        "type": "Knife",
+                        "state": "holstered"
+                    },
+                    "weapon_1": {
+                        "name": "weapon_glock",
+                        "paintkit": "default",
+                        "type": "Pistol",
+                        "ammo_clip": 20,
+                        "ammo_clip_max": 20,
+                        "ammo_reserve": 120,
+                        "state": "holstered"
+                    },
+                    "weapon_2": {
+                        "name": "weapon_ak47",
+                        "paintkit": "default",
+                        "type": "Rifle",
+                        "ammo_clip": 30,
+                        "ammo_clip_max": 30,
+                        "ammo_reserve": 90,
+                        "state": "active"
+                    },
+                    "weapon_3": {
+                        "name": "weapon_hegrenade",
+                        "paintkit": "default",
+                        "type": "Grenade",
+                        "ammo_reserve": 1,
+                        "state": "holstered"
+                    },
+                    "active": {
+                        "name": "weapon_ak47",
+                        "paintkit": "default",
+                        "type": "Rifle",
+                        "ammo_clip": 30,
+                        "ammo_clip_max": 30,
+                        "ammo_reserve": 90,
+                        "state": "active"
+                    }
+                }
+            },
+            "3": {
+                "id": "588",
+                "name": "Дайо",
+                "observer_slot": 8,
+                "team": "T",
+                "position": {
+                    "x": "1453.00",
+                    "y": "496.00",
+                    "z": "-159.97"
+                },
+                "forward": {
+                    "x": "-0.69",
+                    "y": "0.72",
+                    "z": "0.02"
+                },
+                "match_stats": {
+                    "kills": 10,
+                    "assists": 2,
+                    "deaths": 6,
+                    "mvps": 3,
+                    "score": 32
+                },
+                "state": {
+                    "health": 100,
+                    "armor": 100,
+                    "helmet": true,
+                    "flashed": 0,
+                    "smoked": 0,
+                    "burning": 0,
+                    "money": 7050,
+                    "round_kills": 0,
+                    "round_killhs": 0,
+                    "round_totaldmg": 0,
+                    "equip_value": 3950
+                },
+                "weapons": {
+                    "weapon_0": {
+                        "name": "weapon_knife_t",
+                        "paintkit": "default",
+                        "type": "Knife",
+                        "state": "holstered"
+                    },
+                    "weapon_1": {
+                        "name": "weapon_p90",
+                        "paintkit": "default",
+                        "type": "Submachine Gun",
+                        "ammo_clip": 50,
+                        "ammo_clip_max": 50,
+                        "ammo_reserve": 100,
+                        "state": "active"
+                    },
+                    "weapon_2": {
+                        "name": "weapon_p250",
+                        "paintkit": "default",
+                        "type": "Pistol",
+                        "ammo_clip": 13,
+                        "ammo_clip_max": 13,
+                        "ammo_reserve": 26,
+                        "state": "holstered"
+                    },
+                    "weapon_3": {
+                        "name": "weapon_hegrenade",
+                        "paintkit": "default",
+                        "type": "Grenade",
+                        "ammo_reserve": 1,
+                        "state": "holstered"
+                    },
+                    "active": {
+                        "name": "weapon_p90",
+                        "paintkit": "default",
+                        "type": "Submachine Gun",
+                        "ammo_clip": 50,
+                        "ammo_clip_max": 50,
+                        "ammo_reserve": 100,
+                        "state": "active"
+                    }
+                }
+            },
+            "4": {
+                "id": "552",
+                "name": "Мигель",
+                "observer_slot": 5,
+                "team": "T",
+                "position": {
+                    "x": "1507.00",
+                    "y": "536.00",
+                    "z": "-159.97"
+                },
+                "forward": {
+                    "x": "-0.92",
+                    "y": "-0.40",
+                    "z": "0.02"
+                },
+                "match_stats": {
+                    "kills": 10,
+                    "assists": 4,
+                    "deaths": 8,
+                    "mvps": 1,
+                    "score": 34
+                },
+                "state": {
+                    "health": 100,
+                    "armor": 100,
+                    "helmet": true,
+                    "flashed": 0,
+                    "smoked": 0,
+                    "burning": 0,
+                    "money": 7850,
+                    "round_kills": 0,
+                    "round_killhs": 0,
+                    "round_totaldmg": 0,
+                    "equip_value": 2350
+                },
+                "weapons": {
+                    "weapon_0": {
+                        "name": "weapon_knife_t",
+                        "paintkit": "default",
+                        "type": "Knife",
+                        "state": "holstered"
+                    },
+                    "weapon_1": {
+                        "name": "weapon_mac10",
+                        "paintkit": "default",
+                        "type": "Submachine Gun",
+                        "ammo_clip": 30,
+                        "ammo_clip_max": 30,
+                        "ammo_reserve": 100,
+                        "state": "active"
+                    },
+                    "weapon_2": {
+                        "name": "weapon_p250",
+                        "paintkit": "default",
+                        "type": "Pistol",
+                        "ammo_clip": 13,
+                        "ammo_clip_max": 13,
+                        "ammo_reserve": 26,
+                        "state": "holstered"
+                    },
+                    "active": {
+                        "name": "weapon_mac10",
+                        "paintkit": "default",
+                        "type": "Submachine Gun",
+                        "ammo_clip": 30,
+                        "ammo_clip_max": 30,
+                        "ammo_reserve": 100,
+                        "state": "active"
+                    }
+                }
+            }
+        },
+        "team_ct": {
+            "0": {
+                "id": "742",
+                "name": "Ульрик",
+                "observer_slot": 4,
+                "team": "CT",
+                "position": {
+                    "x": "-896.00",
+                    "y": "-1736.00",
+                    "z": "-335.97"
+                },
+                "forward": {
+                    "x": "0.84",
+                    "y": "-0.55",
+                    "z": "0.02"
+                },
+                "match_stats": {
+                    "kills": 0,
+                    "assists": 1,
+                    "deaths": 3,
+                    "mvps": 0,
+                    "score": 2
+                },
+                "state": {
+                    "health": 100,
+                    "armor": 100,
+                    "helmet": true,
+                    "flashed": 0,
+                    "smoked": 0,
+                    "burning": 0,
+                    "money": 1600,
+                    "round_kills": 0,
+                    "round_killhs": 0,
+                    "round_totaldmg": 0,
+                    "equip_value": 3650
+                },
+                "weapons": {
+                    "weapon_0": {
+                        "name": "weapon_knife",
+                        "paintkit": "default",
+                        "type": "Knife",
+                        "state": "holstered"
+                    },
+                    "weapon_1": {
+                        "name": "weapon_famas",
+                        "paintkit": "default",
+                        "type": "Rifle",
+                        "ammo_clip": 25,
+                        "ammo_clip_max": 25,
+                        "ammo_reserve": 90,
+                        "state": "active"
+                    },
+                    "weapon_2": {
+                        "name": "weapon_deagle",
+                        "paintkit": "default",
+                        "type": "Pistol",
+                        "ammo_clip": 7,
+                        "ammo_clip_max": 7,
+                        "ammo_reserve": 35,
+                        "state": "holstered"
+                    },
+                    "active": {
+                        "name": "weapon_famas",
+                        "paintkit": "default",
+                        "type": "Rifle",
+                        "ammo_clip": 25,
+                        "ammo_clip_max": 25,
+                        "ammo_reserve": 90,
+                        "state": "active"
+                    }
+                }
+            },
+            "1": {
+                "id": "558",
+                "name": "Уэсли",
+                "observer_slot": 0,
+                "team": "CT",
+                "position": {
+                    "x": "-1148.75",
+                    "y": "-1890.88",
+                    "z": "-335.97"
+                },
+                "forward": {
+                    "x": "-0.74",
+                    "y": "0.67",
+                    "z": "0.02"
+                },
+                "match_stats": {
+                    "kills": 4,
+                    "assists": 6,
+                    "deaths": 9,
+                    "mvps": 0,
+                    "score": 21
+                },
+                "state": {
+                    "health": 100,
+                    "armor": 100,
+                    "helmet": true,
+                    "flashed": 0,
+                    "smoked": 0,
+                    "burning": 0,
+                    "money": 6600,
+                    "round_kills": 0,
+                    "round_killhs": 0,
+                    "round_totaldmg": 0,
+                    "equip_value": 3650
+                },
+                "weapons": {
+                    "weapon_0": {
+                        "name": "weapon_knife",
+                        "paintkit": "default",
+                        "type": "Knife",
+                        "state": "holstered"
+                    },
+                    "weapon_1": {
+                        "name": "weapon_famas",
+                        "paintkit": "default",
+                        "type": "Rifle",
+                        "ammo_clip": 25,
+                        "ammo_clip_max": 25,
+                        "ammo_reserve": 90,
+                        "state": "active"
+                    },
+                    "weapon_2": {
+                        "name": "weapon_deagle",
+                        "paintkit": "default",
+                        "type": "Pistol",
+                        "ammo_clip": 7,
+                        "ammo_clip_max": 7,
+                        "ammo_reserve": 35,
+                        "state": "holstered"
+                    },
+                    "active": {
+                        "name": "weapon_famas",
+                        "paintkit": "default",
+                        "type": "Rifle",
+                        "ammo_clip": 25,
+                        "ammo_clip_max": 25,
+                        "ammo_reserve": 90,
+                        "state": "active"
+                    }
+                }
+            },
+            "2": {
+                "id": "582",
+                "name": "Ури",
+                "observer_slot": 2,
+                "team": "CT",
+                "position": {
+                    "x": "-817.00",
+                    "y": "-1712.00",
+                    "z": "-335.97"
+                },
+                "forward": {
+                    "x": "0.49",
+                    "y": "-0.87",
+                    "z": "0.02"
+                },
+                "match_stats": {
+                    "kills": 8,
+                    "assists": 5,
+                    "deaths": 8,
+                    "mvps": 1,
+                    "score": 36
+                },
+                "state": {
+                    "health": 100,
+                    "armor": 100,
+                    "helmet": true,
+                    "flashed": 0,
+                    "smoked": 0,
+                    "burning": 0,
+                    "money": 10000,
+                    "round_kills": 0,
+                    "round_killhs": 0,
+                    "round_totaldmg": 0,
+                    "equip_value": 3950
+                },
+                "weapons": {
+                    "weapon_0": {
+                        "name": "weapon_knife",
+                        "paintkit": "default",
+                        "type": "Knife",
+                        "state": "holstered"
+                    },
+                    "weapon_1": {
+                        "name": "weapon_famas",
+                        "paintkit": "default",
+                        "type": "Rifle",
+                        "ammo_clip": 25,
+                        "ammo_clip_max": 25,
+                        "ammo_reserve": 90,
+                        "state": "active"
+                    },
+                    "weapon_2": {
+                        "name": "weapon_deagle",
+                        "paintkit": "default",
+                        "type": "Pistol",
+                        "ammo_clip": 7,
+                        "ammo_clip_max": 7,
+                        "ammo_reserve": 35,
+                        "state": "holstered"
+                    },
+                    "weapon_3": {
+                        "name": "weapon_smokegrenade",
+                        "paintkit": "default",
+                        "type": "Grenade",
+                        "ammo_reserve": 1,
+                        "state": "holstered"
+                    },
+                    "active": {
+                        "name": "weapon_famas",
+                        "paintkit": "default",
+                        "type": "Rifle",
+                        "ammo_clip": 25,
+                        "ammo_clip_max": 25,
+                        "ammo_reserve": 90,
+                        "state": "active"
+                    }
+                }
+            },
+            "3": {
+                "id": "570",
+                "name": "Уолдо",
+                "observer_slot": 1,
+                "team": "CT",
+                "position": {
+                    "x": "-936.00",
+                    "y": "-1816.00",
+                    "z": "-335.97"
+                },
+                "forward": {
+                    "x": "0.87",
+                    "y": "0.49",
+                    "z": "0.02"
+                },
+                "match_stats": {
+                    "kills": 13,
+                    "assists": 1,
+                    "deaths": 9,
+                    "mvps": 2,
+                    "score": 45
+                },
+                "state": {
+                    "health": 100,
+                    "armor": 100,
+                    "helmet": true,
+                    "flashed": 0,
+                    "smoked": 0,
+                    "burning": 0,
+                    "money": 8000,
+                    "round_kills": 0,
+                    "round_killhs": 0,
+                    "round_totaldmg": 0,
+                    "equip_value": 4050
+                },
+                "weapons": {
+                    "weapon_0": {
+                        "name": "weapon_knife",
+                        "paintkit": "default",
+                        "type": "Knife",
+                        "state": "holstered"
+                    },
+                    "weapon_1": {
+                        "name": "weapon_p90",
+                        "paintkit": "default",
+                        "type": "Submachine Gun",
+                        "ammo_clip": 50,
+                        "ammo_clip_max": 50,
+                        "ammo_reserve": 100,
+                        "state": "active"
+                    },
+                    "weapon_2": {
+                        "name": "weapon_deagle",
+                        "paintkit": "default",
+                        "type": "Pistol",
+                        "ammo_clip": 7,
+                        "ammo_clip_max": 7,
+                        "ammo_reserve": 35,
+                        "state": "holstered"
+                    },
+                    "active": {
+                        "name": "weapon_p90",
+                        "paintkit": "default",
+                        "type": "Submachine Gun",
+                        "ammo_clip": 50,
+                        "ammo_clip_max": 50,
+                        "ammo_reserve": 100,
+                        "state": "active"
+                    }
+                }
+            },
+            "4": {
+                "id": "594",
+                "name": "Telsen",
+                "observer_slot": 3,
+                "team": "CT",
+                "position": {
+                    "x": "-1184.00",
+                    "y": "-1616.00",
+                    "z": "-335.97"
+                },
+                "forward": {
+                    "x": "-0.49",
+                    "y": "0.87",
+                    "z": "0.02"
+                },
+                "match_stats": {
+                    "kills": 13,
+                    "assists": 2,
+                    "deaths": 10,
+                    "mvps": 2,
+                    "score": 46
+                },
+                "state": {
+                    "health": 100,
+                    "armor": 100,
+                    "helmet": true,
+                    "flashed": 0,
+                    "smoked": 0,
+                    "burning": 0,
+                    "money": 8450,
+                    "round_kills": 0,
+                    "round_killhs": 0,
+                    "round_totaldmg": 0,
+                    "equip_value": 2550
+                },
+                "weapons": {
+                    "weapon_0": {
+                        "name": "weapon_knife",
+                        "paintkit": "default",
+                        "type": "Knife",
+                        "state": "holstered"
+                    },
+                    "weapon_1": {
+                        "name": "weapon_nova",
+                        "paintkit": "default",
+                        "type": "Shotgun",
+                        "ammo_clip": 8,
+                        "ammo_clip_max": 8,
+                        "ammo_reserve": 32,
+                        "state": "active"
+                    },
+                    "weapon_2": {
+                        "name": "weapon_fiveseven",
+                        "paintkit": "default",
+                        "type": "Pistol",
+                        "ammo_clip": 20,
+                        "ammo_clip_max": 20,
+                        "ammo_reserve": 100,
+                        "state": "holstered"
+                    },
+                    "active": {
+                        "name": "weapon_nova",
+                        "paintkit": "default",
+                        "type": "Shotgun",
+                        "ammo_clip": 8,
+                        "ammo_clip_max": 8,
+                        "ammo_reserve": 32,
+                        "state": "active"
+                    }
+                }
+            }
+        }
+    }
+}
